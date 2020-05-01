@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.5626rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+footer {
+  font-size: 0.8rem;
+  color: #666;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#chart {
+  position: relative;
+}
+
+canvas {
+  width: 100%;
+  display: block;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.total-count {
+  position: absolute;
+  left: 50%;
+  top: calc(25% - 1.5em);
+  transform: translateX(-50%);
+  width: 300px;
+  color: #cc0000;
+}
+
+.date-control {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  width: 300px;
+}
+
+.scrubber {
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  align-items: center;
+}
+
+.scrubber button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.4em;
+  text-decoration: none;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.scrubber button:active {
+  transform: scale(0.99);
+}
+
+.scrubber .play-button {
+  vertical-align: middle;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 12px solid #999;
+}
+
+.scrubber .pause-button {
+  vertical-align: middle;
+  border-left: 4px solid #999;
+  border-right: 4px solid #999;
+  padding-right: 4px;
+  height: 12px;
+}
+
+.scrubber .play-button:hover,
+.scrubber .play-button:focus {
+  border-left-color: #666;
+}
+
+.scrubber .pause-button:hover,
+.scrubber .pause-button:focus {
+  border-left-color: #666;
+  border-right-color: #666;
+}
+
+.scrubber label {
+  display: flex;
+  align-items: center;
+}
+
+.scrubber input {
+  width: 180px;
+}
+
+.scrubber .output {
+  margin-left: 0.4em;
+  font-size: 0.8rem;
+}

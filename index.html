@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Spike Map</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Covid-19 Cases Across the U.S.</h1>
+    <div id="chart"></div>
+    <footer>
+      <div>Data and sources:</div>
+      <ol>
+        <li>
+          <a
+            href="https://www.nytimes.com/interactive/2020/04/06/us/coronavirus-deaths-united-states.html"
+            >See How the Coronavirus Death Toll Grew Across the U.S.</a
+          >
+        </li>
+        <li>
+          <a href="https://observablehq.com/@xaquingv/bubble-map-or-spike-map"
+            >COVID-19 Bubble map or spike map? (Twitter debate)</a
+          >
+        </li>
+        <li>
+          The New York Times data repository (<a
+            href="https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv"
+            >https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv</a
+          >) with cumulative counts of coronavirus cases in the United States,
+          at state and county level.
+        </li>
+      </ol>
+    </footer>
+    <!-- JS -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="geo-albers-usa-pr.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
